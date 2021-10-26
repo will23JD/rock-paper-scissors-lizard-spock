@@ -20,6 +20,7 @@ h1 {
 #help {
     background-color:#7b859c;
     color: #dfc0a2;;
+    font-size: 1.3rem;
     height: 80px;
     width: 80px;
     margin: 10px;
@@ -49,3 +50,16 @@ h1 {
     transform: scale(1.5);
 }
 
+/* result area */
+
+.results-area {
+    background-color: #4d7792;
+    color: #dfc0a2;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.resluts {
+    display: inline-block;
+    margin: 0 4rem;
+}
