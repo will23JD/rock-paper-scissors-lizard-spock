@@ -1,0 +1,51 @@
+body {
+    background-color: #212d3e;
+    font-family: 'Nunito', sans-serif;
+    color: #dfc0a2;
+    text-align: center;
+}
+
+/* heading style */
+
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+/* How to play button */
+
+.help-area {
+}
+
+#help {
+    background-color:#7b859c;
+    color: #dfc0a2;;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+/* game area */
+
+.game-area {
+    background-color: #4d7792;
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 3rem;
+}
+
+.game {
+    transition: transform .3s; /* Animation */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid;
+    margin: 0 2rem;
+}
+
+.game:hover {
+    border-color: green;
+    transform: scale(1.5);
+}
+
