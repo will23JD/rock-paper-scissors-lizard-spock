@@ -14,18 +14,58 @@ h1 {
 
 /* How to play button */
 
-.help-area {
+#H2P {
+    background-color: #4d7792;
+    color: #dfc0a2;
+    font-size: 1.4rem;
 }
 
-#help {
-    background-color:#7b859c;
-    color: #dfc0a2;;
-    font-size: 1.3rem;
-    height: 80px;
-    width: 80px;
-    margin: 10px;
-}
-
+.help {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border: 1px solid #4d7792;
+    border-radius: 10px;
+    background-color: #212d3e;
+    z-index: 8;
+    width: 600px;
+    max-width: 80%;
+  }
+  
+  .help.active {
+    transform: translate(-50%, -50%) ;
+    display: initial;
+  }
+  
+  .close-button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #dfc0a2;
+  }
+  
+  .help-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 /* game area */
 
 .game-area {

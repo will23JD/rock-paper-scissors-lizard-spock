@@ -15,9 +15,17 @@
         Rock Paper Scissors
     </h1>
 
-    <div class="help-area">
-        <button id="help">How to play</button>
+    
+    <button id="H2P" data-modal-target="#pop">How to play</button>
+    <div class="help" id="pop">
+        <button data-close-button class="close-button">&times;</button>
+      <div class="help-body">
+        Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </div>
+    </div>
+    <div id="overlay"></div>
+
 
     <div class="game-area">
         <button class="game" id="rock">
