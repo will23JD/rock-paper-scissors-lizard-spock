@@ -1,6 +1,8 @@
+// How to play pop up
 let openModalButtons = document.querySelectorAll('[data-modal-target]');
 let closeModalButtons = document.querySelectorAll('[data-close-button]');
 let overlay = document.getElementById('overlay');
+
 
 openModalButtons.forEach(button => {
   button.addEventListener('click',function () {
@@ -9,6 +11,7 @@ openModalButtons.forEach(button => {
   });
 });
 
+
 overlay.addEventListener('click', function(){
   const modals = document.querySelectorAll('.help.active')
   modals.forEach(modal => {
@@ -16,12 +19,14 @@ overlay.addEventListener('click', function(){
   });
 });
 
+
 closeModalButtons.forEach(button => {
   button.addEventListener('click', function() {
     const modal = button.closest('.help');
     closeModal(modal);
   });
 });
+
 
 function openModal(modal) {
   modal.classList.add('active');
@@ -33,7 +38,7 @@ function closeModal(modal) {
   overlay.classList.remove('active');
 };
 
-// js to decide who wins 
+ // game
 
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
@@ -90,6 +95,9 @@ function choice(userChoice) {
     
 }
 
+/**
+ * Gets users choice
+ */
 function getUserChoice() {
   rock.addEventListener('click', function() {
     choice('rock');
