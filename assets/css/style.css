@@ -18,11 +18,12 @@ h1 {
     background-color: #4d7792;
     color: #dfc0a2;
     font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .help {
     position: fixed;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
@@ -45,6 +46,7 @@ h1 {
     background: none;
     font-size: 1.25rem;
     color: #dfc0a2;
+    cursor: pointer;
   }
   
   .help-body {
@@ -74,6 +76,7 @@ h1 {
   font-size: 2rem;
   margin: 0 2rem;
   padding: 3rem;
+  text-transform: capitalize
 }
 
 /* game area */
@@ -81,7 +84,7 @@ h1 {
 .game-area {
     background-color: #4d7792;
     font-size: 2rem;
-    margin: 2rem;
+    margin: 1rem 2rem;
     padding: 3rem;
 }
 
@@ -98,6 +101,7 @@ h1 {
 .game:hover {
     border-color: green;
     transform: scale(1.5);
+    cursor: pointer;
 }
 
 /* result area */
@@ -105,7 +109,7 @@ h1 {
 .results-area {
     background-color: #4d7792;
     color: #dfc0a2;
-    margin: 2rem;
+    margin: 1rem 2rem;
     font-size: 2rem;
 }
 
