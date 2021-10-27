@@ -48,8 +48,24 @@ function getComputerChoice() {
 
 function choice(userChoice) {
   let computerChoice = getComputerChoice();
-  console.log(computerChoice);
-  console.log(userChoice);
+
+  switch (userChoice + computerChoice) {
+    case 'rockscissors':
+    case 'paperrock':
+    case 'scissorspaper':
+      console.log("user Wins")
+      break;
+    case 'scissorsrock':
+    case 'rockpaper':
+    case 'paperscissors':
+      console.log("computer Wins")
+      break;
+    case 'rockrock':
+    case 'paperpaper':
+    case 'scissorsscissors':
+      console.log("Draw")
+  }
+    
 }
 
 function getUserChoice() {
