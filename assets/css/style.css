@@ -21,6 +21,8 @@ h1 {
     cursor: pointer;
 }
 
+/* How to play pop up  */
+
 .help {
     position: fixed;
     top: 30%;
@@ -92,10 +94,13 @@ h1 {
     transition: transform .3s; /* Animation */
     height: 150px;
     width: 150px;
+    font-size: 6rem;
     border-radius: 50%;
     overflow: hidden;
+    object-fit: scale-down;
     border: 5px solid;
-    margin: 0 2rem;
+    margin: 2rem;
+    color: #212d3e;
 }
 
 .game:hover {
