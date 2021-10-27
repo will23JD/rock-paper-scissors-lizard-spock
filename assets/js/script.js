@@ -40,13 +40,13 @@ let paper = document.getElementById('paper');
 let scissors = document.getElementById('scissors');
 let userScore = document.getElementById('user-score');
 let computerScore = document.getElementById('computer-score');
+let result = document.getElementById('result-text')
 
 function getComputerChoice() {
   let options = ['rock', 'paper', 'scissors'];
   let randomNum = (Math.floor(Math.random() * 3));
   return options[randomNum];
 }
-
 
 function choice(userChoice) {
   let computerChoice = getComputerChoice();
@@ -55,19 +55,19 @@ function choice(userChoice) {
     case 'rockscissors':
     case 'paperrock':
     case 'scissorspaper':
-      console.log("user Wins")
       ++userScore.innerHTML;
+      result.innerHTML = `${userChoice} beats ${computerChoice}. You Win!`
       break;
     case 'scissorsrock':
     case 'rockpaper':
     case 'paperscissors':
-      console.log("computer Wins")
       ++computerScore.innerHTML;
+      result.innerHTML = `${userChoice} loses to ${computerChoice}. You Lose.`
       break;
     case 'rockrock':
     case 'paperpaper':
     case 'scissorsscissors':
-      console.log("Draw")
+      result.innerHTML = `It's a Draw ${userChoice} = ${computerChoice}`
   }
     
 }
