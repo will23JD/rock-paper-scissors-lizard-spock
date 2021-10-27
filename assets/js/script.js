@@ -38,6 +38,8 @@ function closeModal(modal) {
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissors = document.getElementById('scissors');
+let userScore = document.getElementById('user-score');
+let computerScore = document.getElementById('computer-score');
 
 function getComputerChoice() {
   let options = ['rock', 'paper', 'scissors'];
@@ -54,11 +56,13 @@ function choice(userChoice) {
     case 'paperrock':
     case 'scissorspaper':
       console.log("user Wins")
+      ++userScore.innerHTML;
       break;
     case 'scissorsrock':
     case 'rockpaper':
     case 'paperscissors':
       console.log("computer Wins")
+      ++computerScore.innerHTML;
       break;
     case 'rockrock':
     case 'paperpaper':
