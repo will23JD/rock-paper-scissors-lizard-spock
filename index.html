@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google fonts -->
+<!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors, Lizard and Spock</title>
 </head>
 <body>
+<!-- Heading -->
     <h1 id="heading">
         Rock Paper Scissors
     </h1>
 
-    
+<!-- How to play button -->
     <button id="H2P" data-modal-target="#pop">How to play</button>
+
+<!-- How to play up pop -->
     <div class="help" id="pop">
         <button data-close-button class="close-button">&times;</button>
       <div class="help-body">
-        Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.
+            Rock crushes scissors, Scissors cuts paper
+            Paper covers rock, Rock crushes lizard
+            Lizard poisons Spock, Spock smashes scissors
+            Scissors decapitates lizard, Lizard eats paper
+            Paper disproves Spock, Spock vaporizes rock
+            Rock crushes scissors
         <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </div>
     </div>
     <div id="overlay"></div>
 
+<!-- results area -->
     <div class="results-area">
         <div class="result" id="you">
             You
@@ -37,8 +46,10 @@
         </div>
     </div>
 
+<!-- Pop up text showing who won -->
     <div id="result-text"></div>
-  
+ 
+<!-- Game area to select your choice -->
     <div class="game-area">
         <button class="game" id="rock">
             <img src="assets/images/rock.png" alt="Rock">
