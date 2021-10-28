@@ -47,11 +47,13 @@ let lizard = document.getElementById('lizard');
 let spock = document.getElementById('spock');
 let userScore = document.getElementById('user-score');
 let computerScore = document.getElementById('computer-score');
-let result = document.getElementById('result-text')
+let result = document.getElementById('result-text');
 let game = document.querySelector('.game-area');
-let userPick = document.getElementById('user-pick')
-let computerPick = document.getElementById('computer-pick')
-let desision = document.getElementById('desision')
+let userPick = document.getElementById('user-pick');
+let computerPick = document.getElementById('computer-pick');
+let desision = document.getElementById('desision');
+let start = document.querySelectorAll('.game');
+let restart = document.getElementById('play-again');
 
 function getComputerChoice() {
   let options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
@@ -88,7 +90,7 @@ function choice(userChoice) {
     case 'paperspock':
     case 'spockrock':
       ++userScore.innerHTML;
-      desision.innerHTML = `${userChoice} beats ${computerChoice}<br> You Win!`
+      desision.innerHTML = `${userChoice} beats ${computerChoice}<br> You Win!`;
       break;
     case 'scissorsrock':
     case 'rockpaper':
@@ -101,14 +103,14 @@ function choice(userChoice) {
     case 'spockpaper':
     case 'rockspock':
       ++computerScore.innerHTML;
-      desision.innerHTML = `${userChoice} loses to ${computerChoice}<br> You Lose`
+      desision.innerHTML = `${userChoice} loses to ${computerChoice}<br> You Lose`;
       break;
     case 'rockrock':
     case 'paperpaper':
     case 'scissorsscissors':
     case 'lizardlizard':
     case 'spockspock':
-      desision.innerHTML = `It's a Draw`
+      desision.innerHTML = `It's a Draw`;
   }
     
 }
@@ -119,38 +121,41 @@ function choice(userChoice) {
  function getUserChoice() {
   rock.addEventListener('click', function() {
     choice('rock');
-    game.style.display = 'none';
-    result.style.display = 'flex';
     userPick.innerHTML = `<i class="far fa-hand-rock"></i>`
-  })
+  });
 
   paper.addEventListener('click', function() {
     choice('paper');
-    game.style.display = 'none';
-    result.style.display = 'flex';
     userPick.innerHTML = `<i class="far fa-hand-paper"></i>`
-  })
+  });
 
   scissors.addEventListener('click', function() {
     choice('scissors');
-    game.style.display = 'none';
-    result.style.display = 'flex';
     userPick.innerHTML = `<i class="far fa-hand-scissors"></i>`
-  })
+  });
 
   lizard.addEventListener('click', function() {
     choice('lizard');
-    game.style.display = 'none';
-    result.style.display = 'flex';
     userPick.innerHTML = `<i class="far fa-hand-lizard"></i>`
-  })
+  });
 
   spock.addEventListener('click', function() {
     choice('spock');
+    userPick.innerHTML = `<i class="far fa-hand-spock"></i>`
+  });
+}
+
+start.forEach(button => {
+  button.addEventListener('click', function() {
     game.style.display = 'none';
     result.style.display = 'flex';
-    userPick.innerHTML = `<i class="far fa-hand-spock"></i>`
   })
-}
+});
+
+
+  restart.addEventListener('click', function() {
+    game.style.display = '';
+    result.style.display = 'none';
+  })
 
 getUserChoice();
