@@ -48,12 +48,30 @@ let spock = document.getElementById('spock');
 let userScore = document.getElementById('user-score');
 let computerScore = document.getElementById('computer-score');
 let result = document.getElementById('result-text')
+let game = document.querySelector('.game-area');
+let userPick = document.getElementById('user-pick')
+let computerPick = document.getElementById('computer-pick')
+let desision = document.getElementById('desision')
 
 function getComputerChoice() {
   let options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
   let randomNum = (Math.floor(Math.random() * 5));
+  if (randomNum === 0) {
+    computerPick.innerHTML = `<i class="far fa-hand-rock"></i>`
+  } else if (randomNum === 1) {
+    computerPick.innerHTML = `<i class="far fa-hand-paper"></i>`
+  }
+  else if (randomNum === 2) {
+    computerPick.innerHTML = `<i class="far fa-hand-scissors"></i>`
+  }
+  else if (randomNum === 3) {
+    computerPick.innerHTML = `<i class="far fa-hand-lizard"></i>`
+  } else {
+    computerPick.innerHTML = `<i class="far fa-hand-spock"></i>`
+  }
   return options[randomNum];
 }
+
 
 function choice(userChoice) {
   let computerChoice = getComputerChoice();
@@ -70,7 +88,7 @@ function choice(userChoice) {
     case 'paperspock':
     case 'spockrock':
       ++userScore.innerHTML;
-
+      desision.innerHTML = `${userChoice} beats ${computerChoice}<br> You Win!`
       break;
     case 'scissorsrock':
     case 'rockpaper':
@@ -83,13 +101,14 @@ function choice(userChoice) {
     case 'spockpaper':
     case 'rockspock':
       ++computerScore.innerHTML;
-      
+      desision.innerHTML = `${userChoice} loses to ${computerChoice}<br> You Lose`
       break;
     case 'rockrock':
     case 'paperpaper':
     case 'scissorsscissors':
     case 'lizardlizard':
     case 'spockspock':
+      desision.innerHTML = `It's a Draw`
   }
     
 }
@@ -97,27 +116,40 @@ function choice(userChoice) {
 /**
  * Gets users choice
  */
-function getUserChoice() {
+ function getUserChoice() {
   rock.addEventListener('click', function() {
     choice('rock');
-    let game = document.querySelector('.game-area');
     game.style.display = 'none';
+    result.style.display = 'flex';
+    userPick.innerHTML = `<i class="far fa-hand-rock"></i>`
   })
 
   paper.addEventListener('click', function() {
     choice('paper');
+    game.style.display = 'none';
+    result.style.display = 'flex';
+    userPick.innerHTML = `<i class="far fa-hand-paper"></i>`
   })
 
   scissors.addEventListener('click', function() {
     choice('scissors');
+    game.style.display = 'none';
+    result.style.display = 'flex';
+    userPick.innerHTML = `<i class="far fa-hand-scissors"></i>`
   })
 
   lizard.addEventListener('click', function() {
     choice('lizard');
+    game.style.display = 'none';
+    result.style.display = 'flex';
+    userPick.innerHTML = `<i class="far fa-hand-lizard"></i>`
   })
 
   spock.addEventListener('click', function() {
     choice('spock');
+    game.style.display = 'none';
+    result.style.display = 'flex';
+    userPick.innerHTML = `<i class="far fa-hand-spock"></i>`
   })
 }
 
