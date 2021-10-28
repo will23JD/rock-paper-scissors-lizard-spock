@@ -19,6 +19,8 @@ h1 {
     color: #dfc0a2;
     font-size: 1.4rem;
     cursor: pointer;
+    border: none;
+    border-radius: 10px;
 }
 
 /* How to play pop up  */
@@ -71,16 +73,6 @@ h1 {
     pointer-events: all;
   }
 
- /* Winner text area */
-
-#result-text {
-  background-color: #4d7792;
-  font-size: 2rem;
-  margin: 0 2rem;
-  padding: 3rem;
-  text-transform: capitalize
-}
-
 /* game area */
 
 .game-area {
@@ -121,4 +113,44 @@ h1 {
 .result {
     display: inline-block;
     margin: 0 4rem;
+}
+
+/* result-text area */
+
+#result-text {
+  background-color: #4d7792;
+  margin: 0 2rem;
+  text-transform: capitalize;
+  display: flex;
+  display: none;
+}
+
+#result-text h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#result-text > div {
+  flex: 1;
+}
+
+.choice {
+  font-size: 10rem;
+}
+
+#decision {
+  padding-top: 50%;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+#play-again {
+  background-color: #212d3e;
+  color: #dfc0a2;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
 }

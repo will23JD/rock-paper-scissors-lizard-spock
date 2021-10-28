@@ -70,7 +70,7 @@ function choice(userChoice) {
     case 'paperspock':
     case 'spockrock':
       ++userScore.innerHTML;
-      result.innerHTML = `${userChoice} beats ${computerChoice}. You Win!`
+
       break;
     case 'scissorsrock':
     case 'rockpaper':
@@ -83,14 +83,13 @@ function choice(userChoice) {
     case 'spockpaper':
     case 'rockspock':
       ++computerScore.innerHTML;
-      result.innerHTML = `${userChoice} loses to ${computerChoice}. You Lose.`
+      
       break;
     case 'rockrock':
     case 'paperpaper':
     case 'scissorsscissors':
     case 'lizardlizard':
     case 'spockspock':
-      result.innerHTML = `It's a Draw ${userChoice} = ${computerChoice}`
   }
     
 }
@@ -101,6 +100,8 @@ function choice(userChoice) {
 function getUserChoice() {
   rock.addEventListener('click', function() {
     choice('rock');
+    let game = document.querySelector('.game-area');
+    game.style.display = 'none';
   })
 
   paper.addEventListener('click', function() {
