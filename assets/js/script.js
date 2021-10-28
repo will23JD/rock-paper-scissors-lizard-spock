@@ -1,9 +1,15 @@
 // How to play pop up
+
+// declare variables
 let openModalButtons = document.querySelectorAll('[data-modal-target]');
 let closeModalButtons = document.querySelectorAll('[data-close-button]');
 let overlay = document.getElementById('overlay');
 
-
+/**
+ * adds event listeners to the open button
+ * and applys to modal
+ * passes to value to openModal
+ */
 openModalButtons.forEach(button => {
   button.addEventListener('click',function () {
     const modal = document.querySelector(button.dataset.modalTarget)
@@ -11,7 +17,11 @@ openModalButtons.forEach(button => {
   });
 });
 
-
+/**
+ * adds event listeners to overlay
+ * and applys to modals
+ * passes to value to closeModal
+ */
 overlay.addEventListener('click', function(){
   const modals = document.querySelectorAll('.help.active')
   modals.forEach(modal => {
@@ -19,7 +29,11 @@ overlay.addEventListener('click', function(){
   });
 });
 
-
+/**
+ * adds event listeners to the close button
+ * and applys to modal
+ * passes to value to closeModal
+ */
 closeModalButtons.forEach(button => {
   button.addEventListener('click', function() {
     const modal = button.closest('.help');
@@ -27,19 +41,29 @@ closeModalButtons.forEach(button => {
   });
 });
 
-
+/**
+ * function to open te modal
+ * adds the class active to
+ * modal and overlay
+ */
 function openModal(modal) {
   modal.classList.add('active');
   overlay.classList.add('active');
 };
 
+/**
+ * function to close te modal
+ * removes the class active from
+ * modal and overlay
+ */
 function closeModal(modal) {
   modal.classList.remove('active');
   overlay.classList.remove('active');
 };
 
- // game
+// game
 
+// declare variables
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissors = document.getElementById('scissors');
@@ -55,6 +79,11 @@ let desision = document.getElementById('desision');
 let start = document.querySelectorAll('.game');
 let restart = document.getElementById('play-again');
 
+/**
+ * function to get computer choice 
+ * using a random number 0-5
+ * and apply computerPick image to resluts area
+ */
 function getComputerChoice() {
   let options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
   let randomNum = (Math.floor(Math.random() * 5));
@@ -74,7 +103,10 @@ function getComputerChoice() {
   return options[randomNum];
 }
 
-
+/** 
+ *function to find who wins the round
+ or if its a draw
+*/
 function choice(userChoice) {
   let computerChoice = getComputerChoice();
 
@@ -117,6 +149,7 @@ function choice(userChoice) {
 
 /**
  * Gets users choice
+ * and sets the image for userPick
  */
  function getUserChoice() {
   rock.addEventListener('click', function() {
@@ -145,6 +178,12 @@ function choice(userChoice) {
   });
 }
 
+/**
+ * function to add event lister
+ * to game choices to 
+ * hide game area and
+ * show results area
+ */
 start.forEach(button => {
   button.addEventListener('click', function() {
     game.style.display = 'none';
@@ -152,7 +191,11 @@ start.forEach(button => {
   })
 });
 
-
+/**
+ * add event listerner to 
+ * hind results area 
+ * and show game area
+ */
   restart.addEventListener('click', function() {
     game.style.display = '';
     result.style.display = 'none';
