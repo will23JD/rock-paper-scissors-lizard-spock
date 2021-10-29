@@ -88,17 +88,17 @@ function getComputerChoice() {
   let options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
   let randomNum = (Math.floor(Math.random() * 5));
   if (randomNum === 0) {
-    computerPick.innerHTML = `<i class="far fa-hand-rock"></i>`
+    computerPick.innerHTML = rock.innerHTML
   } else if (randomNum === 1) {
-    computerPick.innerHTML = `<i class="far fa-hand-paper"></i>`
+    computerPick.innerHTML = paper.innerHTML
   }
   else if (randomNum === 2) {
-    computerPick.innerHTML = `<i class="far fa-hand-scissors"></i>`
+    computerPick.innerHTML = scissors.innerHTML
   }
   else if (randomNum === 3) {
-    computerPick.innerHTML = `<i class="far fa-hand-lizard"></i>`
+    computerPick.innerHTML = lizard.innerHTML
   } else {
-    computerPick.innerHTML = `<i class="far fa-hand-spock"></i>`
+    computerPick.innerHTML = spock.innerHTML
   }
   return options[randomNum];
 }
@@ -154,27 +154,27 @@ function choice(userChoice) {
  function getUserChoice() {
   rock.addEventListener('click', function() {
     choice('rock');
-    userPick.innerHTML = `<i class="far fa-hand-rock"></i>`
+    userPick.innerHTML = rock.innerHTML;
   });
 
   paper.addEventListener('click', function() {
     choice('paper');
-    userPick.innerHTML = `<i class="far fa-hand-paper"></i>`
+    userPick.innerHTML = paper.innerHTML
   });
 
   scissors.addEventListener('click', function() {
     choice('scissors');
-    userPick.innerHTML = `<i class="far fa-hand-scissors"></i>`
+    userPick.innerHTML = scissors.innerHTML
   });
 
   lizard.addEventListener('click', function() {
     choice('lizard');
-    userPick.innerHTML = `<i class="far fa-hand-lizard"></i>`
+    userPick.innerHTML = lizard.innerHTML
   });
 
   spock.addEventListener('click', function() {
     choice('spock');
-    userPick.innerHTML = `<i class="far fa-hand-spock"></i>`
+    userPick.innerHTML = spock.innerHTML
   });
 }
 
