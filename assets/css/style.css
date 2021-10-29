@@ -38,7 +38,15 @@ h1 {
     width: 600px;
     max-width: 80%;
   }
-
+  
+  .help-body > a {
+    display: none;
+    font-size: 2rem;
+    margin: 1%;
+    padding: 5%;
+    color: #dfc0a2;
+  }
+  
   .help.active {
     display: initial;
   }
@@ -156,6 +164,14 @@ h2 {
 }
 
  /* media queries */
+ @media screen and (max-width: 740px) {
+  iframe {
+    display: none;
+  }
+  .help-body > a {
+    display: block;
+  }
+ }
  @media screen and (max-width: 650px) {
   #result-text {
     flex-direction: column;
