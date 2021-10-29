@@ -154,7 +154,7 @@ function choice(userChoice) {
  function getUserChoice() {
   rock.addEventListener('click', function() {
     choice('rock');
-    userPick.innerHTML = rock.innerHTML;
+    userPick.innerHTML = rock.innerHTML
   });
 
   paper.addEventListener('click', function() {
