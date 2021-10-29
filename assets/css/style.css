@@ -3,6 +3,7 @@ body {
     font-family: 'Nunito', sans-serif;
     color: #fff;
     text-align: center;
+    -webkit-text-size-adjust: 100%
 }
 
 /* heading style */
@@ -23,11 +24,17 @@ h1 {
     border-radius: 10px;
 }
 
+#H2P:hover{
+  color: #4d7792;
+  background-color: #fff;
+  transform: scale(1.5);
+}
+
 /* How to play pop up  */
 
 .help {
     position: fixed;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
@@ -50,6 +57,11 @@ h1 {
   .help.active {
     display: initial;
   }
+
+  .help ul {
+    list-style: none;
+    padding: 0;
+  }
   
   .close-button {
     border: none;
@@ -58,6 +70,10 @@ h1 {
     font-size: 1.25rem;
     color: #fff;
     cursor: pointer;
+  }
+  .close-button:hover {
+    color: red;
+    transform: scale(1.5);
   }
   
   .help-body {
@@ -180,6 +196,12 @@ h2 {
   border: none;
   border-radius: 10px;
   margin: 10% 0;
+}
+
+#play-again:hover {
+  color: #212d3e;
+  background-color: #fff;
+  transform: scale(1.5);
 }
 
  /* media queries */
