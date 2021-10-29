@@ -1,7 +1,7 @@
 body {
     background-color: #212d3e;
     font-family: 'Nunito', sans-serif;
-    color: #dfc0a2;
+    color: #fff;
     text-align: center;
 }
 
@@ -16,7 +16,7 @@ h1 {
 
 #H2P {
     background-color: #4d7792;
-    color: #dfc0a2;
+    color: #fff;
     font-size: 1.4rem;
     cursor: pointer;
     border: none;
@@ -44,7 +44,7 @@ h1 {
     font-size: 2rem;
     margin: 1%;
     padding: 5%;
-    color: #dfc0a2;
+    color: #fff;
   }
   
   .help.active {
@@ -56,7 +56,7 @@ h1 {
     outline: none;
     background: none;
     font-size: 1.25rem;
-    color: #dfc0a2;
+    color: #fff;
     cursor: pointer;
   }
   
@@ -108,11 +108,31 @@ h1 {
     cursor: pointer;
 }
 
+#rock {
+  color: #f44336;
+}
+
+#paper {
+  color: #e4773b;
+}
+
+#scissors {
+  color: #8866AA;
+}
+
+#lizard {
+  color: #50b225;
+}
+
+#spock {
+  color: #2587d1;
+}
+
 /* result area */
 
 .results-area {
     background-color: #4d7792;
-    color: #dfc0a2;
+    color: #fff;
     margin: 1rem 2rem;
     font-size: 2rem;
 }
@@ -155,7 +175,7 @@ h2 {
 
 #play-again {
   background-color: #212d3e;
-  color: #dfc0a2;
+  color: #fff;
   font-size: 1.4rem;
   cursor: pointer;
   border: none;
@@ -172,11 +192,12 @@ h2 {
     display: block;
   }
  }
+
  @media screen and (max-width: 650px) {
   #result-text {
     flex-direction: column;
   }
-  
+
   #result-text i {
     font-size: 4rem;
   }
@@ -189,6 +210,7 @@ h2 {
     font-size: 3rem;
   }
  }
+
  @media  screen and (max-width: 510px) {
    h1 {
      font-size: 2rem;
