@@ -12,7 +12,7 @@ let overlay = document.getElementById('overlay');
  */
 openModalButtons.forEach(button => {
   button.addEventListener('click',function () {
-    const modal = document.querySelector(button.dataset.modalTarget)
+    const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
   });
 });
@@ -23,7 +23,7 @@ openModalButtons.forEach(button => {
  * passes to value to closeModal
  */
 overlay.addEventListener('click', function(){
-  const modals = document.querySelectorAll('.help.active')
+  const modals = document.querySelectorAll('.help.active');
   modals.forEach(modal => {
     closeModal(modal);
   });
@@ -49,7 +49,7 @@ closeModalButtons.forEach(button => {
 function openModal(modal) {
   modal.classList.add('active');
   overlay.classList.add('active');
-};
+}
 
 /**
  * function to close te modal
@@ -59,7 +59,7 @@ function openModal(modal) {
 function closeModal(modal) {
   modal.classList.remove('active');
   overlay.classList.remove('active');
-};
+}
 
 // game
 
@@ -88,17 +88,17 @@ function getComputerChoice() {
   let options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
   let randomNum = (Math.floor(Math.random() * 5));
   if (randomNum === 0) {
-    computerPick.innerHTML = rock.innerHTML
+    computerPick.innerHTML = rock.innerHTML;
   } else if (randomNum === 1) {
-    computerPick.innerHTML = paper.innerHTML
+    computerPick.innerHTML = paper.innerHTML;
   }
   else if (randomNum === 2) {
-    computerPick.innerHTML = scissors.innerHTML
+    computerPick.innerHTML = scissors.innerHTML;
   }
   else if (randomNum === 3) {
-    computerPick.innerHTML = lizard.innerHTML
+    computerPick.innerHTML = lizard.innerHTML;
   } else {
-    computerPick.innerHTML = spock.innerHTML
+    computerPick.innerHTML = spock.innerHTML;
   }
   return options[randomNum];
 }
@@ -154,27 +154,27 @@ function choice(userChoice) {
  function getUserChoice() {
   rock.addEventListener('click', function() {
     choice('rock');
-    userPick.innerHTML = rock.innerHTML
+    userPick.innerHTML = rock.innerHTML;
   });
 
   paper.addEventListener('click', function() {
     choice('paper');
-    userPick.innerHTML = paper.innerHTML
+    userPick.innerHTML = paper.innerHTML;
   });
 
   scissors.addEventListener('click', function() {
     choice('scissors');
-    userPick.innerHTML = scissors.innerHTML
+    userPick.innerHTML = scissors.innerHTML;
   });
 
   lizard.addEventListener('click', function() {
     choice('lizard');
-    userPick.innerHTML = lizard.innerHTML
+    userPick.innerHTML = lizard.innerHTML;
   });
 
   spock.addEventListener('click', function() {
     choice('spock');
-    userPick.innerHTML = spock.innerHTML
+    userPick.innerHTML = spock.innerHTML;
   });
 }
 
@@ -188,7 +188,7 @@ start.forEach(button => {
   button.addEventListener('click', function() {
     game.style.display = 'none';
     result.style.display = 'flex';
-  })
+  });
 });
 
 /**
@@ -199,6 +199,6 @@ start.forEach(button => {
   restart.addEventListener('click', function() {
     game.style.display = '';
     result.style.display = 'none';
-  })
+  });
 
 getUserChoice();
