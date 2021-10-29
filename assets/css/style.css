@@ -38,9 +38,8 @@ h1 {
     width: 600px;
     max-width: 80%;
   }
-  
+
   .help.active {
-    transform: translate(-50%, -50%) ;
     display: initial;
   }
   
@@ -83,7 +82,7 @@ h1 {
 }
 
 .game {
-    transition: transform .3s; /* Animation */
+    transition: transform .3s;
     height: 150px;
     width: 150px;
     font-size: 6rem;
@@ -157,9 +156,36 @@ h2 {
 }
 
  /* media queries */
-
  @media screen and (max-width: 650px) {
-   #result-text {
+  #result-text {
     flex-direction: column;
+   }
+ }
+ @media  screen and (max-width: 510px) {
+   h1 {
+     font-size: 2rem;
+   }
+
+   .game i {
+     font-size: 4rem;
+     transform: translate(0%, -30%);
+   }
+
+   div {
+     font-size: 1rem;
+   }
+
+   .help {
+     top: 40%;
+   }
+
+   .game-area {
+     padding: 0;
+   }
+
+   .game {
+     height: 100px;
+     width: 100px;
+     margin: 0.2rem;
    }
  }
