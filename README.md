@@ -80,21 +80,36 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 ## Testing
 
 ### Web browers
-    * When testing in different browers I wanted to make sure all feature and style look and functioned the same. This is important so that the user can have the same exprince on any different brower. I tested that the page opens and works in browsers: Chrome, Edge, Firefox, Safari, and Bing. To test the different browsers I used my iPhone to load the page on safari and my computer to test Chrome, Edge, Firefox, and bing
+* When testing in different browers I wanted to make sure all feature and style look and functioned the same. This is important so that the user can have the same exprince on any different brower. I tested that the page opens and works in browsers: Chrome, Edge, Firefox, Safari, and Bing. To test the different browsers I used my iPhone to load the page on safari and my computer to test Chrome, Edge, Firefox, and bing
 
 ### Responsiveness
-    * I test that this project is responsive, keeps a consistent style, function as intended and looks good on all screen sizes. To make sure my site worked on different devices I loaded the page on an iphone XR, 13" laptop, 15" laptop and my PC which is displaying to a 24" monitor. To test my site on my screen sizes I didn't have I used dev tools. Through my testing I found my points in which content overlapped, this allowed me to know what sections, divs and elements to include in my media queries.
+* I test that this project is responsive, keeps a consistent style, function as intended and looks good on all screen sizes. To make sure my site worked on different devices I loaded the page on an iphone XR, 13" laptop, 15" laptop and my PC which is displaying to a 24" monitor. To test my site on my screen sizes I didn't have I used dev tools. Through my testing I found my points in which content overlapped, this allowed me to know what sections, divs and elements to include in my media queries.
 
 ### Functions
-    * As the game logic for the game workes using javascript I want to make sure nothing changed causing the game to break when running on different browers.
+* As the game logic for the game workes using javascript I want to make sure nothing changed causing the game to break when running on different browers.
 
 ### Validator Testing
 
 * HTML
+    * No errors were found when passing through the [official W3C validator](https://validator.w3.org/#validate_by_input).
+
+    ![HTML validator](assets/images/htmlval.png)
 
 * CSS
+    * No errors were found when passing through the [official (Jigsaw) validator](https://jigsaw.w3.org/css-validator/#validate_by_input).
+
+    ![CSS validator](assets/images/cssval.png)
+
+* Javascript
+    * No errors were found when passing through the [JSHint validator](https://jshint.com/).
+
+    ![Javascript validator](assets/images/Jsval.png)
 
 * Accessibility
+    * I used lighthouse to confirme the site accessibility was 100%.
+
+    ![Lighthouse results](assets/images/lighthouse.png)
+
 
 ### Fixed Bugs 
 
