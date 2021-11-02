@@ -157,8 +157,7 @@ Forking the repository allows us to have a copy of the original repository to vi
 ## Credits
 
 ### Code 
-
-### Media
+* Basic code for how to play popup learnt from Web Dev Simplified on [YouTube](https://www.youtube.com/watch?v=MBaw_6cPmAw)
 
 ### Acknowledgements
 
