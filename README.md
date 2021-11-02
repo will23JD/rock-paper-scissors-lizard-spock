@@ -2,9 +2,9 @@
 
 [View the live project here.](https://will23jd.github.io/rock-paper-scissors-lizard-spock/)
 
+Rock paper scissors lizard spock is a abaptation of the classic game rock paper scissors. The game was created by Sam Kass and brought to populatity by the show The Big Bag Theory. The game was made as an improvement of the classic game as people who knew each other where more likely to draw than win. By creating this game was created as a simple fun game to be played to pass the time while on the internet, such as wait for a call, document to download or if you've just go some spare time. 
 
-
-![View of website on different screen sizes.]()
+![View of website on different screen sizes.](assets/images/am-i-res.png)
 
 ## User Experience (UX)
 
