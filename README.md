@@ -112,8 +112,10 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 
 
 ### Fixed Bugs 
+* Video player on the how to play popup was over flowing at smaller screen sizes, replaced it with a button to take to you to the vidoe instead.
 
 ### Unfixed Bugs
+* Video keeps playing if not paused before closing the popup.
 
 ## Technologies Used
 
