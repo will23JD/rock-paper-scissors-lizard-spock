@@ -41,6 +41,40 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 
 ## Features
 
+### Title 
+* At the top of of the page is a simple rock paper scissors lizard spock title in a bold white text. This is improtant because it lets the user know straight away what the game is.
+
+![Image of the title](assets/images/title.png)
+
+### How to play button
+* Under the title is a button which says 'How to play'
+* This is an important feature to have at the top as it's right there if a user doesn't know how to play, so they dont have to go searching for the button or have to look the rules up them selves.
+* The button scales up and swaps the text and background colours when hovered over to further imply that you can click on it.
+* When the button is click it will bring up a popup window that shows the rules of the game and a video(Which shows the game being described in The Big Bang Theory)
+* The user can then click on the X (which will turn red and scale up on hover) to exit back to the game or click anywhere else on the page.
+
+![Image of the How to play botton normal and hover](assets/images/how-to-button.png)
+![Image of the rules popup with video](assets/images/how-to-play.png)
+
+### Score bored 
+* The score bored is above the game area and haves two players 'You' and the 'Computer'.
+* The score for each player incease's by 1 for a win and stays the same for a draw.
+
+![Image of the score bored](assets/images/score.png)
+
+### Game choices
+* The last element on the page is the game area in which the user can pick one of the 5 icons(Rock, Paper, Scissors, etc...)start the game.
+* When the user hovers over which icon it will scale up and have a green border around it.
+
+![Image of the game choices](assets/images/game.png)
+
+### Result
+* When the user makes a choice the game area will change to a result area displaying the results of the round.
+* With user pick on the left and the computer pick on the right and the result in the middle.
+* In the bottom middle there is a play again button(That scales up and swaps colours of hover), which will bring back the game area.
+
+![Image of the results area](assets/images/winner.png)
+
 ###  Features Left to Implement
 
 ## Testing
