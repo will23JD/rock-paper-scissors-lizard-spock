@@ -8,7 +8,13 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 
 ## User Experience (UX)
 
-* ### Design 
+* ## Use Goals
+    * As a user I want to easily locate to rules on how to play.
+    * As a user I want to experience to be easy to navigate without the use of back buttons in the brower.
+    * As a user I want to be able to instantly the results of the game.
+    * As a user I want to be able to keep count of the score of the game with a score bored.
+
+* ## Design 
 
     * ### Imagery 
 
