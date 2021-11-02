@@ -120,9 +120,9 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 ## Technologies Used
 
 ### Languages Used
-
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Framework, Libraries and Programs used
 
