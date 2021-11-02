@@ -16,13 +16,17 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 
 * ## Design 
 
-    * ### Imagery 
+    * ### Imagery
+        * I used images for the different choices (rock, paper, scissors, ect..) to give a clean a simple look.
+        * I used bright colours for the images to make them stand out against the back ground and give the game an fun look.
 
-
-    * ### Color Scheme
-
+    * ### Colour Scheme
+        * For the colour scheme I used [dark blue](https://www.color-hex.com/color/212d3e)for the backgound of the game and white for the text.
+        * I used a [lighter blue](https://www.color-hex.com/color/4d7792) for the background for the divs to make them stand out and break up the content.
+        * For the game choices I used [red](https://www.color-hex.com/color/f44336), [orange](https://www.color-hex.com/color/e4773b), [purple](https://www.color-hex.com/color/8866aa), [green](https://www.color-hex.com/color/50b225) and [blue](https://www.color-hex.com/color/2587d1) to make them really sant out and pop.
 
     * ### Typography 
+        * For the game I used the font [Nunito](https://fonts.google.com/specimen/Nunito?query=+++++++Nunito) with a fall back of sans-serif. I used this font because i was clear and easy to read as well as being bold to stand out.
 
 * ## Wireframes 
 
