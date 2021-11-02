@@ -30,11 +30,14 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 
 * ## Wireframes 
 
-    * ### Landing Page 
+    * ### Game page PC
 
-    * ### Routes Page
+    ![Home game page design](assets/wireframes/pc-game.png)
+    ![Results page design](assets/wireframes/pc-win.png)
 
-    * ### Get In Touch Page
+    * ### Phones and tablets
+
+    ![Home game and results page design for phones and tablets](assets/wireframes/phone-wire.png)
 
 ## Features
 
