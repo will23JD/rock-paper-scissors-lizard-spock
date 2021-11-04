@@ -132,6 +132,8 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
     * Google fonts was used to import the Roboto and Rubix fonts into css which is used on all pages.
 * [Font Awesome](https://fontawesome.com/):
     * Used for the social media links in the footer.
+* [Mixkit](https://mixkit.co/free-sound-effects/)
+    * Used for mp3 sound for game win and lose.
 
 ## Deployment
 
