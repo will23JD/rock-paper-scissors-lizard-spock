@@ -79,6 +79,9 @@ let desision = document.getElementById('desision');
 let start = document.querySelectorAll('.game');
 let restart = document.getElementById('play-again');
 
+// sounds
+let winS = document.getElementById('winS')
+
 /**
  * function to get computer choice 
  * using a random number 0-5
@@ -122,6 +125,7 @@ function choice(userChoice) {
     case 'paperspock':
     case 'spockrock':
       ++userScore.innerHTML;
+      winS.play();
       desision.innerHTML = `${userChoice} beats ${computerChoice}<br> You Win!`;
       break;
     case 'scissorsrock':

@@ -176,6 +176,10 @@ h1 {
   flex: 1;
 }
 
+#sounds{
+  display: none;
+}
+
 .choice {
   font-size: 10rem;
 }
