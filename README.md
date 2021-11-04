@@ -157,7 +157,8 @@ Forking the repository allows us to have a copy of the original repository to vi
 ## Credits
 
 ### Code 
-* Basic code for how to play popup learnt from Web Dev Simplified on [YouTube](https://www.youtube.com/watch?v=MBaw_6cPmAw)
+* Basic code for how to play popup modal learnt from Web Dev Simplified on [YouTube](https://www.youtube.com/watch?v=MBaw_6cPmAw)
+* [W3Schools](https://www.w3schools.com/) use for help with audio sounds.
 
 ### Acknowledgements
 
