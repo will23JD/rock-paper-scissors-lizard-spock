@@ -80,7 +80,7 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 ## Testing
 
 ### Web browers
-* When testing in different browers I wanted to make sure all feature and style look and functioned the same. This is important so that the user can have the same exprince on any different brower. I tested that the page opens and works in browsers: Chrome, Edge, Firefox, Safari, and Bing. To test the different browsers I used my iPhone to load the page on safari and my computer to test Chrome, Edge, Firefox, and bing
+* When testing in different browers I wanted to make sure all feature and style look and functioned the same. This is important so that the user can have the same exprince on any different brower. I tested that the page opens and works in browsers: Chrome, Edge, Firefox,and Bing. To test the different browsers I used my computer to test Chrome, Edge, Firefox, and bing
 
 ### Responsiveness
 * I test that this project is responsive, keeps a consistent style, function as intended and looks good on all screen sizes. To make sure my site worked on different devices I loaded the page on an iphone XR, 13" laptop, 15" laptop and my PC which is displaying to a 24" monitor. To test my site on my screen sizes I didn't have I used dev tools. Through my testing I found my points in which content overlapped, this allowed me to know what sections, divs and elements to include in my media queries.
@@ -116,6 +116,7 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 
 ### Unfixed Bugs
 * Video keeps playing if not paused before closing the popup.
+* Styles don't carry over to phones.
 
 ## Technologies Used
 
