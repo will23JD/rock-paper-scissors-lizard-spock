@@ -81,6 +81,7 @@ let restart = document.getElementById('play-again');
 
 // sounds
 let winS = document.getElementById('winS')
+let loseS = document.getElementById('loseS')
 
 /**
  * function to get computer choice 
@@ -139,6 +140,7 @@ function choice(userChoice) {
     case 'spockpaper':
     case 'rockspock':
       ++computerScore.innerHTML;
+      loseS.play();
       desision.innerHTML = `${userChoice} loses to ${computerChoice}<br> You Lose`;
       break;
     case 'rockrock':

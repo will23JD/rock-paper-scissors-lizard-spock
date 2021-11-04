@@ -176,10 +176,6 @@ h1 {
   flex: 1;
 }
 
-#sounds{
-  display: none;
-}
-
 .choice {
   font-size: 10rem;
 }
@@ -206,6 +202,11 @@ h2 {
   color: #212d3e;
   background-color: #fff;
   transform: scale(1.5);
+}
+
+/* sounds */
+#sounds{
+  display: none;
 }
 
  /* media queries */
