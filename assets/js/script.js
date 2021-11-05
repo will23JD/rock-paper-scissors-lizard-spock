@@ -82,6 +82,7 @@ let restart = document.getElementById('play-again');
 // sounds
 let winS = document.getElementById('winS')
 let loseS = document.getElementById('loseS')
+let drawS = document.getElementById('drawS')
 
 /**
  * function to get computer choice 
@@ -148,6 +149,7 @@ function choice(userChoice) {
     case 'scissorsscissors':
     case 'lizardlizard':
     case 'spockspock':
+      drawS.play();
       desision.innerHTML = `It's a Draw`;
   }
     
