@@ -75,6 +75,10 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 
 ![Image of the results area](assets/images/winner.png)
 
+### Sounds
+* To make the game more interactive I added sounds of win, lose and draw.
+* The sounds make winning, losing and drawing more impactful.
+
 ###  Features Left to Implement
 
 ## Testing
@@ -117,6 +121,7 @@ Rock paper scissors lizard spock is a abaptation of the classic game rock paper 
 ### Unfixed Bugs
 * Video keeps playing if not paused before closing the popup.
 * Styles don't carry over to phones.
+* If you get the same result twice the sound won't play the second time.
 
 ## Technologies Used
 
